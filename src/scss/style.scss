@@ -183,10 +183,11 @@ dl {
     align-items: center;
     background-color: #93a7ab;
     border-radius: 1em;
+    .portfolio-header{
+      color: rgb(47, 47, 47);
+    } 
   }
-  .portfolio-header{
-    color: rgb(47, 47, 47);
-  } 
+  
   .portfolio-cards {
     display: flex;
     flex-direction: row;
@@ -226,3 +227,29 @@ dl {
       background-color: lightgray;
     }
   }
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 1em;
+  &__header{
+    color: rgb(47, 47, 47);
+  }
+}
+
+.aboutbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  &__photo {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+  }
+  &__content {
+    width: 60%
+  }
+}
