@@ -253,3 +253,104 @@ dl {
     width: 60%
   }
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: rgb(97, 206, 97);
+  border-radius: 1em;
+
+  &__header{
+    color:whitesmoke;
+  }
+  .contactblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+
+  }
+  .contactsection {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    align-items: flex-start;
+    // border: 1px solid blue;
+  }
+  .contactsection__box {
+    // border: 1px solid red;
+    width: 95%;
+    margin-bottom: 1em;
+    border-bottom: 2px solid green;
+  }
+  .input {
+    border: none;
+    background-color:  rgb(97, 206, 97);
+    height: 2em;
+    margin-left: 1em;
+  }
+  .messagelabel {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    textarea {
+      width: 100%;
+      height: 10em;
+      margin-top: 0.5em;
+      border-radius: 3px;
+      border-style: none;
+    }
+  }
+  .sendbutton {
+    width: 60%;
+    height: 1.5em;
+    margin-top: 1em;
+    border-radius: 3px;
+    border: none;
+    color: whitesmoke;
+    background-color: rgb(61, 58, 58);
+    font-size: 1.5em;
+  }
+  .findmehere {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    width: 100%;
+    margin-top: 1em;
+    background-color: rgb(90, 90, 90);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+  }
+  .linebox {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    &__line {
+      flex-grow: 1;
+      height: 0.3em;
+      background-color: black;
+    }
+    &__text {
+      margin-left: 1em;
+      margin-right: 1em;
+      color: white;
+    }
+  }
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    &__icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
