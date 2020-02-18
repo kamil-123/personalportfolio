@@ -41,7 +41,7 @@ header{
 
 
 .home {
-    background-image: url('/img/sailing-1024320_1280_cut.jpg');
+    background-image: url('../img/sailing-1024320_1280_cut.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,6 +50,9 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
     text-align: center;
     margin-top: 2em;
     border-radius: 1em;
@@ -69,6 +72,41 @@ header{
         z-index: -1;
     }
 }
+.hometitle1 {
+  margin-right: 0em;
+  transition: 1s;
+  &--right {
+    margin-right: -100em;
+    
+  }
+}
+.hometitle2 {
+  margin-left: 0em;
+  transition: 1s;
+  transition-delay: 1s;
+  &--left {
+    margin-left: -100em;
+    
+  }
+}
+.hometitle3 {
+  opacity: 1;
+  transition: 1s;
+  transition-delay: 2s;
+  &--appear {
+    opacity: 0;
+    
+  }
+}
+.motto {
+  transform: rotateY(0deg);
+  transition: 1s;
+  transition-delay: 3s;
+  &--appear {
+    transform: rotateY(90deg);
+       
+  }
+}
 
 
 
@@ -87,10 +125,28 @@ header{
     background-color: #1c503e;
     color: white;
     border-radius: 1em;
-    img{
-      width: 6em;
-      border-radius: 50%;
-    } 
+    @media (max-width: 890px) {
+      flex-wrap: wrap;
+    }
+    &__part {
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      width: 23%;
+      @media (max-width: 890px) {
+        width: 47%;
+      }
+      @media (max-width: 500px) {
+        width: 95%;
+      }
+      
+      img{
+        width: 6em;
+        border-radius: 50%;
+      } 
+    }
+    
 }
 
 .skills{
@@ -139,6 +195,10 @@ dl {
     position: absolute;
     left: 0;
     justify-content: flex-end;
+    @media (max-width: 890px) {
+      font-weight: 500;
+      height: 30px;
+    }
   }
   
   .percentage {
@@ -148,6 +208,9 @@ dl {
     width: 100%;
     height: 40px;
     margin-left: 130px;
+    @media (max-width: 890px) {
+      height: 30px;;
+    }
     
     &:after {
       content: "";
@@ -175,6 +238,9 @@ dl {
       &:after {
         $value: ($i * 1%);
         width: $value;
+        @media (max-width: 890px) {
+          width: $value * 0.8;
+        }
       }
     }
   }

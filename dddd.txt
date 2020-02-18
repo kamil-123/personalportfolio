@@ -1,0 +1,11 @@
+Define
+In the first step we work together with you to define vision, scope and basic functionality of the web site or application.
+
+Design
+We work closely with you to build user interface, visual content, hierarchy, etc. All designs are created fully responsive across all viewing devices.
+
+Develop
+Our design concepts and solutions come to life. Project is beta tested and agreed with you to meet all your feedbacks to the functionality.
+
+Deploy
+This is the final phase of the project, where your website or application goes to user testing and finally, launch. 
