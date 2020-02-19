@@ -408,6 +408,9 @@ dl {
     color: whitesmoke;
     background-color: rgb(61, 58, 58);
     font-size: 1.5em;
+    @media (max-width: 485px) {
+      font-size: 1em;
+    }
   }
   .findmehere {
     display: flex;
@@ -434,6 +437,18 @@ dl {
       margin-left: 1em;
       margin-right: 1em;
       color: white;
+      @media (max-width: 728px) {
+        font-size: 25px;
+      }
+      @media (max-width: 610px) {
+        font-size: 20px;
+      }
+      @media (max-width: 485px) {
+        font-size: 15px;
+      }
+      @media (max-width: 365px) {
+        font-size: 12px;
+      }
     }
   }
   .icons {
@@ -445,6 +460,10 @@ dl {
     &__icon {
       width: 60px;
       height: 60px;
+      @media (max-width: 485px) {
+        width: 45px;
+        height: 45px;
+      }  
     }
   }
 }
